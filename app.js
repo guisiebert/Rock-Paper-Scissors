@@ -10,7 +10,7 @@ possibleChoices.forEach(op => op.addEventListener('click', (e) => {
     //As ações a serem feitas quando um dos botões é apertado
     userChoice = e.target.id // dá a id do botão para a variável
     userChoiceDisplay.innerHTML = userChoice // imprime a variável no html
-    console.log("You have choosen: " + userChoice)
+    // console.log("You have choosen: " + userChoice)
     generateComputerChoice();
     getResult();
 }))
@@ -23,7 +23,7 @@ function generateComputerChoice() {
     if (randomNumber == 3) {computerChoice = "Scissors"};
 
     computerChoiceDisplay.innerHTML = computerChoice;
-    console.log("Computer chooses: " + computerChoice)
+    // console.log("Computer chooses: " + computerChoice)
 }
 
 function getResult() {
@@ -41,5 +41,5 @@ function getResult() {
 //TESTERS
 
 const oioo = document.getElementById('testing');
-oioo.innerHTML = ""
+oioo.innerHTML = "Hello"
 
